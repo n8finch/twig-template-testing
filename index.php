@@ -3,7 +3,9 @@
 require_once './vendor/autoload.php';
 
 $loader = new \Twig\Loader\FilesystemLoader('./templates');
-$twig = new \Twig\Environment($loader);
+$twig = new \Twig\Environment($loader, array(
+    'cache' => './tmp/cache',
+));
 
 // echo '<script>alert("gotcha");</script>';
 
