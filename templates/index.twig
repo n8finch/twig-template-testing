@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twig Testing</title>
+</head>
+<body>
+
+    <h1>{{ name | upper }}'s ToDos </h1>
+
+    <ul>
+        {% for item in todos %}
+            <li>
+                <label for="todo-{{ item.id }}">
+                    <input id="todo-{{ item.id }}" name="todo-{{ item.id }}" type="checkbox" vale="{{ item.id }}" {{ item.completed ? 'checked' : '' }} />{{ item.title }}
+                </label>
+            </li>
+        {% endfor %}
+    </ul>
+    
+
+
+</body>
+</html>

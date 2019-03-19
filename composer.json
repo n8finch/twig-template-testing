@@ -1,0 +1,12 @@
+{
+    "name": "n8finch/twig-test",
+    "authors": [
+        {
+            "name": "Nate Finch",
+            "email": "finchproservices@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}
