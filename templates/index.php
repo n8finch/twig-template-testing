@@ -16,7 +16,12 @@ $twig_array = [
             'id' => '3',
             'title' => '<script>alert("Last thing");</script>',
             'completed' => true,
-        ]
+        ],
+        // [
+        //     'id' => '3',
+        //     'title' => 'Last thing',
+        //     'completed' => true,
+        // ]
     ]
 ];
 ?>
@@ -29,6 +34,8 @@ $twig_array = [
     <title>Twig Testing</title>
 </head>
 <body>
+
+    <!-- Can use <?php echo '';?> or <?= '';?> -->
 
     <h1><?php echo $twig_array['name']; ?>'s ToDos </h1>
 
